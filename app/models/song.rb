@@ -7,5 +7,6 @@ end
 
   def artist_name=(name)
     self.artist = Artist.find_or_create_by(name: name)
+    # makes sure no duplicate artists are created
   end
 end
